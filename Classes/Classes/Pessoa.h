@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Pessoa : NSObject
+// como declarar uma classe
+// @interface NomeDaClasse : NomeClassePai
+@interface Pessoa : NSObject {
+    // atributos da classe, do tipo "Protected"
+    int idade;
+    float saldoBancario;
+}
+
 
 @end
