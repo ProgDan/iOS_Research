@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+// Importação das definições da classe Pessoa
+#import "Pessoa.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -16,6 +19,13 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    // Declarando a classe Pessoa
+    Pessoa* pessoa1;
+    
+    // Instanciando o objeto da classe Pessoa
+    pessoa1 = [[Pessoa alloc] init];
+    
     return YES;
 }
 
