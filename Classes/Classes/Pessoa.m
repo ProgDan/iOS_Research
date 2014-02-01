@@ -11,7 +11,8 @@
 @implementation Pessoa
 
 -(void)falar {
-    NSLog(@"O meu nome é fulano!");
+    NSLog(@"O meu nome é %@!", _nome);
+    NSLog(@"O meu nome é %@!", self.nome);
 }
 
 -(int)getIdade {

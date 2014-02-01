@@ -36,6 +36,16 @@
     
     [pessoa1 andarRua1:@"Rua Amauri" eRua2:@"Av. Faria Lima"];
     
+    // Atribuindo o nome da pessoa (Property)
+    pessoa1.nome = @"Eduardo da Silva";
+    pessoa1.altura = 1.75;
+    
+    // Getter e Setter automáticos da Property
+    [pessoa1 setNome:@"José Souza"];
+    [pessoa1 nome];
+    
+    [pessoa1 falar];
+    
     return YES;
 }
 
