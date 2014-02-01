@@ -79,6 +79,13 @@
         NSLog(@"i = %d", i);    // imprimir os números de 0 .. 10
     }
     
+    // while
+    int w = 10;
+    while (w >= 0) {
+        NSLog(@"w = %d", w);
+        w--;
+    }
+    
     return YES;
 }
 
