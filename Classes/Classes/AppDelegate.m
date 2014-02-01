@@ -26,6 +26,10 @@
     // Instanciando o objeto da classe Pessoa
     pessoa1 = [[Pessoa alloc] init];
     
+    // Chamando um método
+    [pessoa1 falar];
+    [pessoa1 falarTexto:@"Olá!"];
+    
     return YES;
 }
 
