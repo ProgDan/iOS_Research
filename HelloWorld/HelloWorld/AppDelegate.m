@@ -59,6 +59,21 @@
         NSLog(@"x é diferente de 115");
     }
     
+    // SWITCH
+    switch (x) {
+        case 10:
+            NSLog(@"x é igual a 10");
+            break;
+            
+        case 115:
+            NSLog(@"x é igual a 115");
+            break;
+            
+        default:
+            NSLog(@"x é diferente de 10 e 115");
+            break;
+    }
+    
     return YES;
 }
 
