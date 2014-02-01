@@ -48,7 +48,17 @@
     
     NSLog(@"vetor 2 removido: %@", vetor2);
     
+    // Trabalhando com números
+    /* [vetor2 addObject:10];       ERRO! Não conseguimos usar objetos primitivos no vetor!  */
+    NSNumber* numero1 = [[NSNumber alloc] initWithInt:10];
+    NSNumber* numero2 = [[NSNumber alloc] initWithFloat:10.8];
+    [vetor2 addObject:numero2];
+    [vetor2 addObject:numero1];
     
+    NSLog(@"Vetor com números %@", vetor2);
+    
+    int num = [[vetor2 lastObject] intValue];
+    NSLog(@"numero: %d", num);
     
     return YES;
 }
