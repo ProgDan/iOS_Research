@@ -60,6 +60,11 @@
     int num = [[vetor2 lastObject] intValue];
     NSLog(@"numero: %d", num);
     
+    // Identificando o tipo do elemento
+    if([[vetor2 objectAtIndex:3]isKindOfClass:[NSString class]]){
+        NSLog(@"o objeto 3 é do tipo string");
+    }
+    
     return YES;
 }
 
