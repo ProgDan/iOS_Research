@@ -16,5 +16,15 @@
     float saldoBancario;
 }
 
+// declarando métodos da classe
+-(void)falar;
+-(int)getIdade; // perguntar para a classe pessoa a sua idade e irá retornar um inteiro (idade)
+
+// método com parâmetro
+// -(tipoRetorno) nomeMetodo : (tipoParametro) nomeParametro
+-(void)falarTexto:(NSString*) fala;
+
+// método com 2 ou mais parâmetros
+-(void)andarRua1:(NSString*) rua1 eRua2: (NSString *) rua2;
 
 @end
