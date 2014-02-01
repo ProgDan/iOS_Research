@@ -12,6 +12,8 @@
 
 // Método novo
 -(void)ministrarAula {
+    [super falar];
+    [self falar];
     NSLog(@"aula aula aula. ...");
 }
 
