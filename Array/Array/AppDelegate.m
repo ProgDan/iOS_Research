@@ -16,6 +16,19 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    // Array
+    NSArray* vetor1 = [[NSArray alloc] initWithObjects:@"Eduardo",@"Rafael",@"Maria",@"João", nil];
+    
+    NSLog(@"vetor: %@", vetor1);
+    
+    // número de elementos do vetor
+    NSLog(@"quantidade de elementos: %d", vetor1.count);
+    
+    // pegando o elemento 2
+    NSString* objeto2 = [vetor1 objectAtIndex:2];
+    NSLog(@"item 2: %@", objeto2);
+    
     return YES;
 }
 
