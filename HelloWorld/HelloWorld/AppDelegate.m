@@ -29,6 +29,12 @@
     // imprimindo um valor
     NSLog(@"O valor de x é %d", x);
     
+    // float
+    float y = 4.5;  // declarando uma variável do tipo float e atribuindo
+    
+    NSLog(@"O valor do float é %f", y);
+    NSLog(@"limitando as casas do float y = %.2f", y);
+    
     return YES;
 }
 
