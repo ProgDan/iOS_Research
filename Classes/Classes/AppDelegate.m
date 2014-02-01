@@ -67,6 +67,10 @@
     [professor1 falar];
     [professor1 ministrarAula];
     
+    // Polimorfismo
+    Pessoa* pessoaProfessor = (Pessoa *)professor1;     // casting de classes.
+    [pessoaProfessor falar];
+    
     return YES;
 }
 
