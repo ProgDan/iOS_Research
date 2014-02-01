@@ -74,6 +74,11 @@
             break;
     }
     
+    // Laços ou Loops
+    for (int i=0; i <= 10; i++) {
+        NSLog(@"i = %d", i);    // imprimir os números de 0 .. 10
+    }
+    
     return YES;
 }
 
