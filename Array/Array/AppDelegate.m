@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Pessoa.h"
 
 @implementation AppDelegate
 
@@ -28,6 +29,26 @@
     // pegando o elemento 2
     NSString* objeto2 = [vetor1 objectAtIndex:2];
     NSLog(@"item 2: %@", objeto2);
+    
+    // Array dinâmico
+    NSMutableArray* vetor2 = [[NSMutableArray alloc] initWithArray:vetor1];
+    
+    // Pessoa
+    Pessoa* pessoa1 = [[Pessoa alloc] initWithNome:@"Teste" withIdade:20];
+    
+    // Adicionando no vetor
+    [vetor2 addObject:pessoa1];     // Não é comum misturar os tipos no vetor!
+    
+    [vetor2 addObject:@"Luiza"];
+    
+    NSLog(@"Vetor2: %@",vetor2);
+    
+    // Remover um objeto
+    [vetor2 removeObjectAtIndex:1];
+    
+    NSLog(@"vetor 2 removido: %@", vetor2);
+    
+    
     
     return YES;
 }
