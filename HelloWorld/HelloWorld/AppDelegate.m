@@ -35,6 +35,11 @@
     NSLog(@"O valor do float é %f", y);
     NSLog(@"limitando as casas do float y = %.2f", y);
     
+    // STRING - não primitivo
+    NSString* texto = @"Olá Mundo";
+    
+    NSLog(@"imprimindo um texto: %@", texto);
+    
     return YES;
 }
 
