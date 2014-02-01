@@ -40,6 +40,15 @@
     
     NSLog(@"imprimindo um texto: %@", texto);
     
+    // informações de print
+    /*
+     %d (%i) - inteiros
+     %f - float
+     %lf - double
+     %@ (%s) - string
+     %c - character
+     */
+    
     return YES;
 }
 
