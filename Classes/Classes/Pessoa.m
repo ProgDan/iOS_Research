@@ -22,6 +22,18 @@
     return self;
 }
 
+// Construtor Customizado
+- (id)initWithNome:(NSString *)nome withIdade:(int)pIdade
+{
+    self = [super init];
+    if (self) {
+        self.nome = nome;
+        idade = pIdade;
+        saldoBancario = 1.0;
+    }
+    return self;
+}
+
 -(void)falar {
     NSLog(@"O meu nome é %@!", _nome);
     NSLog(@"O meu nome é %@!", self.nome);

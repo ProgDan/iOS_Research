@@ -48,6 +48,10 @@
     
     NSLog(@"O %@ tem %f de altura", pessoa1.nome, pessoa1.altura);
     
+    // Outra pessoa
+    Pessoa* pessoa2 = [[Pessoa alloc] initWithNome:@"Joaquim Alves" withIdade:16];
+    [pessoa2 falar];
+    
     return YES;
 }
 

@@ -32,4 +32,7 @@
 // método com 2 ou mais parâmetros
 -(void)andarRua1:(NSString*) rua1 eRua2: (NSString *) rua2;
 
+// Construtor customizado
+-(id)initWithNome:(NSString*)nome withIdade:(int)pIdade;
+
 @end
