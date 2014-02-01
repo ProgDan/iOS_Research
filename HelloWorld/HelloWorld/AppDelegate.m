@@ -49,6 +49,16 @@
      %c - character
      */
     
+    // Controles de Fluxo
+    
+    // IF
+    if (x == 115) {
+        NSLog(@"x é igual a 115");
+    }
+    else {
+        NSLog(@"x é diferente de 115");
+    }
+    
     return YES;
 }
 
