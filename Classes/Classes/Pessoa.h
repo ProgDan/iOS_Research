@@ -35,4 +35,7 @@
 // Construtor customizado
 -(id)initWithNome:(NSString*)nome withIdade:(int)pIdade;
 
+// Método de classe, colocar o "+"
++(void)pensar;
+
 @end

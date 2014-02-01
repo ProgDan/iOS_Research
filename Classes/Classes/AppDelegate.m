@@ -52,6 +52,9 @@
     Pessoa* pessoa2 = [[Pessoa alloc] initWithNome:@"Joaquim Alves" withIdade:16];
     [pessoa2 falar];
     
+    // Chamada de método estático
+    [Pessoa pensar];
+    
     return YES;
 }
 

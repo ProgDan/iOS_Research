@@ -51,4 +51,8 @@
     NSLog(@"Vou andar para a rua %@ e depois para %@", rua1, rua2);
 }
 
++(void) pensar {
+    NSLog(@"pensando...");
+}
+
 @end
