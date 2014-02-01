@@ -30,6 +30,12 @@
     [pessoa1 falar];
     [pessoa1 falarTexto:@"Olá!"];
     
+    // Pegando um valor de retorno
+    int idadePessoa = [pessoa1 getIdade];
+    NSLog(@"A Pessoa tem %d anos.", idadePessoa);
+    
+    [pessoa1 andarRua1:@"Rua Amauri" eRua2:@"Av. Faria Lima"];
+    
     return YES;
 }
 
