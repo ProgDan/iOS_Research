@@ -10,6 +10,18 @@
 
 @implementation Pessoa
 
+// Construtor
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        self.nome = @"Fulano";
+        idade = 10;
+        saldoBancario = 1.00;
+    }
+    return self;
+}
+
 -(void)falar {
     NSLog(@"O meu nome é %@!", _nome);
     NSLog(@"O meu nome é %@!", self.nome);
