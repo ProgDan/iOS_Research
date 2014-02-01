@@ -19,6 +19,7 @@
 		65D68676189D81DC00CC5B10 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D6865E189D81DC00CC5B10 /* UIKit.framework */; };
 		65D6867E189D81DC00CC5B10 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65D6867C189D81DC00CC5B10 /* InfoPlist.strings */; };
 		65D68680189D81DC00CC5B10 /* ArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D6867F189D81DC00CC5B10 /* ArrayTests.m */; };
+		65D6868B189D82D300CC5B10 /* Pessoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D6868A189D82D300CC5B10 /* Pessoa.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		65D6867B189D81DC00CC5B10 /* ArrayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ArrayTests-Info.plist"; sourceTree = "<group>"; };
 		65D6867D189D81DC00CC5B10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65D6867F189D81DC00CC5B10 /* ArrayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayTests.m; sourceTree = "<group>"; };
+		65D68689189D82D300CC5B10 /* Pessoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pessoa.h; path = ../../Classes/Classes/Pessoa.h; sourceTree = "<group>"; };
+		65D6868A189D82D300CC5B10 /* Pessoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Pessoa.m; path = ../../Classes/Classes/Pessoa.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 			children = (
 				65D68669189D81DC00CC5B10 /* AppDelegate.h */,
 				65D6866A189D81DC00CC5B10 /* AppDelegate.m */,
+				65D68689189D82D300CC5B10 /* Pessoa.h */,
+				65D6868A189D82D300CC5B10 /* Pessoa.m */,
 				65D6866C189D81DC00CC5B10 /* Images.xcassets */,
 				65D68661189D81DC00CC5B10 /* Supporting Files */,
 			);
@@ -240,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65D6866B189D81DC00CC5B10 /* AppDelegate.m in Sources */,
+				65D6868B189D82D300CC5B10 /* Pessoa.m in Sources */,
 				65D68667189D81DC00CC5B10 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
