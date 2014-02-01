@@ -10,6 +10,8 @@
 
 // Importação das definições da classe Pessoa
 #import "Pessoa.h"
+#import "Professor.h"
+#import "Aluno.h"
 
 @implementation AppDelegate
 
@@ -54,6 +56,16 @@
     
     // Chamada de método estático
     [Pessoa pensar];
+    
+    // Aluno
+    Aluno* aluno1 = [[Aluno alloc] initWithNome:@"Zacarias" withIdade:50];
+    [aluno1 falar];     // habiliade da pessoa
+    aluno1.registroAluno = 12345;   // registro do aluno
+    
+    // Professor
+    Professor* professor1 = [[Professor alloc] initWithNome:@"Toyama" withIdade:30];
+    [professor1 falar];
+    [professor1 ministrarAula];
     
     return YES;
 }
