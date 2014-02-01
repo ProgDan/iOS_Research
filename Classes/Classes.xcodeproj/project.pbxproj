@@ -19,6 +19,7 @@
 		65D68632189D383700CC5B10 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D6861A189D383700CC5B10 /* UIKit.framework */; };
 		65D6863A189D383700CC5B10 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65D68638189D383700CC5B10 /* InfoPlist.strings */; };
 		65D6863C189D383700CC5B10 /* ClassesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D6863B189D383700CC5B10 /* ClassesTests.m */; };
+		65D68647189D38DE00CC5B10 /* Pessoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D68646189D38DE00CC5B10 /* Pessoa.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		65D68637189D383700CC5B10 /* ClassesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClassesTests-Info.plist"; sourceTree = "<group>"; };
 		65D68639189D383700CC5B10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65D6863B189D383700CC5B10 /* ClassesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassesTests.m; sourceTree = "<group>"; };
+		65D68645189D38DE00CC5B10 /* Pessoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pessoa.h; sourceTree = "<group>"; };
+		65D68646189D38DE00CC5B10 /* Pessoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pessoa.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				65D68626189D383700CC5B10 /* AppDelegate.m */,
 				65D68628189D383700CC5B10 /* Images.xcassets */,
 				65D6861D189D383700CC5B10 /* Supporting Files */,
+				65D68645189D38DE00CC5B10 /* Pessoa.h */,
+				65D68646189D38DE00CC5B10 /* Pessoa.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -240,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65D68627189D383700CC5B10 /* AppDelegate.m in Sources */,
+				65D68647189D38DE00CC5B10 /* Pessoa.m in Sources */,
 				65D68623189D383700CC5B10 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
