@@ -20,6 +20,15 @@
     // Ponto de inserção do nosso código:
     NSLog(@"Hello World");
     
+    // Variáveis primitivas
+    
+    // inteiro
+    int x;  // declarando uma variável inteira chamada "x"
+    x = 115;    // atribuindo valor
+    
+    // imprimindo um valor
+    NSLog(@"O valor de x é %d", x);
+    
     return YES;
 }
 
