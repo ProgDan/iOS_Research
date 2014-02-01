@@ -71,7 +71,15 @@
     Pessoa* pessoaProfessor = (Pessoa *)professor1;     // casting de classes.
     [pessoaProfessor falar];
     
+    // Vinculação dinâmica
+    [self falarPessoa:professor1];
+    [self falarPessoa:pessoa1];
+    
     return YES;
+}
+
+-(void)falarPessoa:(Pessoa*)pessoa {
+    [pessoa falar];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
