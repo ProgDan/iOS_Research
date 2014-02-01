@@ -16,6 +16,10 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    // Ponto de inserção do nosso código:
+    NSLog(@"Hello World");
+    
     return YES;
 }
 
