@@ -16,6 +16,11 @@
     float saldoBancario;
 }
 
+// Properties
+@property (nonatomic, strong) NSString* nome;
+@property (nonatomic) float altura;
+@property (nonatomic, strong) NSString* enderecoComercial;
+
 // declarando métodos da classe
 -(void)falar;
 -(int)getIdade; // perguntar para a classe pessoa a sua idade e irá retornar um inteiro (idade)
