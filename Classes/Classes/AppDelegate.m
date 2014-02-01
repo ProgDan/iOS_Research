@@ -46,6 +46,8 @@
     
     [pessoa1 falar];
     
+    NSLog(@"O %@ tem %f de altura", pessoa1.nome, pessoa1.altura);
+    
     return YES;
 }
 
