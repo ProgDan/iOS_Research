@@ -10,4 +10,11 @@
 
 @protocol Churrasqueiro <NSObject>
 
+@required
+-(void)acenderChurrasqueira;
+-(void)temperarCarne;
+
+@optional
+-(void)servirCarne;
+
 @end
