@@ -8,5 +8,17 @@
 		<key>Idade</key>
 		<integer>30</integer>
 	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>Eduardo</string>
+		<key>Idade</key>
+		<integer>28</integer>
+	</dict>
+	<dict>
+		<key>Nome</key>
+		<string>Rafael</string>
+		<key>Idade</key>
+		<integer>33</integer>
+	</dict>
 </array>
 </plist>
