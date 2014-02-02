@@ -55,4 +55,9 @@
     NSLog(@"pensando...");
 }
 
+-(NSString *)description {
+    NSString* retorno = [NSString stringWithFormat:@"O meu nome é %@ e tenho %d anos.", self.nome,idade];
+    return retorno;
+}
+
 @end
