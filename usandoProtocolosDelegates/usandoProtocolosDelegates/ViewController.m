@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *minhaLabel;
+- (IBAction)mudarTexto:(id)sender;
 
 @end
 
@@ -51,4 +53,7 @@
     return FALSE;
 }
 
+- (IBAction)mudarTexto:(id)sender {
+    [self.minhaLabel setText:@"Olá Mundo!"];
+}
 @end
