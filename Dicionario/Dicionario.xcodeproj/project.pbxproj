@@ -19,6 +19,7 @@
 		654308A8189E723B00CD6B0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65430890189E723B00CD6B0D /* UIKit.framework */; };
 		654308B0189E723B00CD6B0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 654308AE189E723B00CD6B0D /* InfoPlist.strings */; };
 		654308B2189E723B00CD6B0D /* DicionarioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 654308B1189E723B00CD6B0D /* DicionarioTests.m */; };
+		654308C0189E72D200CD6B0D /* Pessoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 654308BF189E72D200CD6B0D /* Pessoa.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		654308AD189E723B00CD6B0D /* DicionarioTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DicionarioTests-Info.plist"; sourceTree = "<group>"; };
 		654308AF189E723B00CD6B0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		654308B1189E723B00CD6B0D /* DicionarioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DicionarioTests.m; sourceTree = "<group>"; };
+		654308BE189E72D200CD6B0D /* Pessoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pessoa.h; sourceTree = "<group>"; };
+		654308BF189E72D200CD6B0D /* Pessoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pessoa.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 			children = (
 				6543089B189E723B00CD6B0D /* AppDelegate.h */,
 				6543089C189E723B00CD6B0D /* AppDelegate.m */,
+				654308BE189E72D200CD6B0D /* Pessoa.h */,
+				654308BF189E72D200CD6B0D /* Pessoa.m */,
 				6543089E189E723B00CD6B0D /* Images.xcassets */,
 				65430893189E723B00CD6B0D /* Supporting Files */,
 			);
@@ -240,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6543089D189E723B00CD6B0D /* AppDelegate.m in Sources */,
+				654308C0189E72D200CD6B0D /* Pessoa.m in Sources */,
 				65430899189E723B00CD6B0D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
