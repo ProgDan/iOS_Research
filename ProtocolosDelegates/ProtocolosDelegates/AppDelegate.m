@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "Aluno.h"
 #import "Professor.h"
+#import "DonoDaFesta.h"
 
 @implementation AppDelegate
 
@@ -38,6 +39,14 @@
     else {
         NSLog(@"professor não sabe servir carne!");
     }
+    
+    // Dono da Festa
+    DonoDaFesta* dono = [[DonoDaFesta alloc] initWithNome:@"Lucas" withIdade:35];
+    
+    dono.delegate = professor1;
+    
+    [dono cadeOChurrasco];
+    
     
     return YES;
 }

@@ -11,6 +11,11 @@
 @implementation DonoDaFesta
 
 -(void)cadeOChurrasco {
+    if (self.delegate == nil) {
+        NSLog(@"putz, ferrou!");
+        return;
+    }
+    
     [self.delegate acenderChurrasqueira];
     [self.delegate temperarCarne];
 }

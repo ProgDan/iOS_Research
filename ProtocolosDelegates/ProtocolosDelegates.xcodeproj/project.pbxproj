@@ -121,8 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				65A5AA28189EAABD0044D02C /* AppDelegate.h */,
-				65A5AA51189EACAC0044D02C /* Churrasqueiro.h */,
 				65A5AA29189EAABD0044D02C /* AppDelegate.m */,
+				65A5AA51189EACAC0044D02C /* Churrasqueiro.h */,
 				65A5AA52189EB8450044D02C /* DonoDaFesta.h */,
 				65A5AA53189EB8450044D02C /* DonoDaFesta.m */,
 				65A5AA48189EAAFD0044D02C /* Aluno.h */,
