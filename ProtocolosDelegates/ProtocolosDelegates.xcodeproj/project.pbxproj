@@ -22,6 +22,7 @@
 		65A5AA4E189EAAFD0044D02C /* Aluno.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A5AA49189EAAFD0044D02C /* Aluno.m */; };
 		65A5AA4F189EAAFD0044D02C /* Pessoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A5AA4B189EAAFD0044D02C /* Pessoa.m */; };
 		65A5AA50189EAAFD0044D02C /* Professor.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A5AA4D189EAAFD0044D02C /* Professor.m */; };
+		65A5AA54189EB8450044D02C /* DonoDaFesta.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A5AA53189EB8450044D02C /* DonoDaFesta.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		65A5AA4C189EAAFD0044D02C /* Professor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Professor.h; sourceTree = "<group>"; };
 		65A5AA4D189EAAFD0044D02C /* Professor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Professor.m; sourceTree = "<group>"; };
 		65A5AA51189EACAC0044D02C /* Churrasqueiro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Churrasqueiro.h; sourceTree = "<group>"; };
+		65A5AA52189EB8450044D02C /* DonoDaFesta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DonoDaFesta.h; sourceTree = "<group>"; };
+		65A5AA53189EB8450044D02C /* DonoDaFesta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DonoDaFesta.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				65A5AA28189EAABD0044D02C /* AppDelegate.h */,
 				65A5AA51189EACAC0044D02C /* Churrasqueiro.h */,
 				65A5AA29189EAABD0044D02C /* AppDelegate.m */,
+				65A5AA52189EB8450044D02C /* DonoDaFesta.h */,
+				65A5AA53189EB8450044D02C /* DonoDaFesta.m */,
 				65A5AA48189EAAFD0044D02C /* Aluno.h */,
 				65A5AA49189EAAFD0044D02C /* Aluno.m */,
 				65A5AA4A189EAAFD0044D02C /* Pessoa.h */,
@@ -256,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65A5AA54189EB8450044D02C /* DonoDaFesta.m in Sources */,
 				65A5AA4E189EAAFD0044D02C /* Aluno.m in Sources */,
 				65A5AA50189EAAFD0044D02C /* Professor.m in Sources */,
 				65A5AA2A189EAABD0044D02C /* AppDelegate.m in Sources */,
