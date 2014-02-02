@@ -25,6 +25,22 @@
     NSString* valorDaChave1 = [dicionarioFixo objectForKey:@"chave1"];
     NSLog(@"valor da chave 1: %@", valorDaChave1);
     
+    // Dicionário mutável
+    NSMutableDictionary* dicionario = [[NSMutableDictionary alloc]init];
+    
+    // inserindo chava valor
+    [dicionario setObject:@"Andre" forKey:@"nome"];
+    [dicionario setObject:@"Rua Amauri" forKey:@"endereco"];
+    [dicionario setObject:[NSNumber numberWithFloat:1.68] forKey:@"altura"];
+
+    NSLog(@"dicionario: %@", dicionario);
+
+    // removendo um objeto do dicionário
+    [dicionario removeObjectForKey:@"endereco"];
+    
+    NSLog(@"dicionario: %@", dicionario);
+    
+    
     return YES;
 }
 
