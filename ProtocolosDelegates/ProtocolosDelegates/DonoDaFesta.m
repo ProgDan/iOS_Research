@@ -10,4 +10,9 @@
 
 @implementation DonoDaFesta
 
+-(void)cadeOChurrasco {
+    [self.delegate acenderChurrasqueira];
+    [self.delegate temperarCarne];
+}
+
 @end
