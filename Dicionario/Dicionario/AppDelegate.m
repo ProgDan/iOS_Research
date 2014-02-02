@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Pessoa.h"
 
 @implementation AppDelegate
 
@@ -40,6 +41,9 @@
     
     NSLog(@"dicionario: %@", dicionario);
     
+    // adicionando outros tipos de dados
+    Pessoa* irmaoVelho = [[Pessoa alloc] initWithNome:@"Eduardo" withIdade:35];
+    [dicionario setObject:irmaoVelho forKey:@"irmaoVelho"];
     
     return YES;
 }
