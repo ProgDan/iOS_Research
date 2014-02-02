@@ -32,6 +32,13 @@
     [professor1 temperarCarne];
     [professor1 acenderChurrasqueira];
     
+    if(professor1 respondsToSelector:@selector(servirCarne)) {
+        [professor1 servirCarne];
+    }
+    else {
+        NSLog(@"professor não sabe servir carne!");
+    }
+    
     return YES;
 }
 
