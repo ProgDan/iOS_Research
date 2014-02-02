@@ -26,4 +26,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+// Esconder o teclado
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    
+    return TRUE;
+}
+
 @end
