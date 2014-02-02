@@ -7,8 +7,9 @@
 //
 
 #import "Pessoa.h"
+#import "Churrasqueiro.h"
 
-@interface Professor : Pessoa
+@interface Professor : Pessoa <Churrasqueiro>
 
 -(void)ministrarAula;
 

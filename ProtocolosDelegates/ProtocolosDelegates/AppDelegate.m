@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "Aluno.h"
+#import "Professor.h"
 
 @implementation AppDelegate
 
@@ -17,7 +19,18 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
+    // Aluno
+    Aluno* aluno1 = [[Aluno alloc] initWithNome:@"Aluno" withIdade:20];
+    [aluno1 falar];
+    //[aluno1 acenderChurrasqueira];  // Não tem o método acenderChurrasqueira!!
     
+    // Professor
+    Professor* professor1 = [[Professor alloc] initWithNome:@"Professor" withIdade:20];
+    [professor1 falar];
+    
+    // Métodos do protocolo
+    [professor1 temperarCarne];
+    [professor1 acenderChurrasqueira];
     
     return YES;
 }

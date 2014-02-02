@@ -10,6 +10,14 @@
 
 @implementation Professor
 
+-(void)acenderChurrasqueira{
+    NSLog(@"Pegar um tanque de guerra e atirar na churrasqueira.");
+}
+
+-(void)temperarCarne {
+    NSLog(@"Lançar a carne no saco se sal grosso");
+}
+
 // Método novo
 -(void)ministrarAula {
     [super falar];
