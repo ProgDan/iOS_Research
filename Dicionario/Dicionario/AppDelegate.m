@@ -16,6 +16,15 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    // Criando um NSDictionary
+    NSDictionary* dicionarioFixo = [[NSDictionary alloc]initWithObjects:@[@"valor1",@"valor2"] forKeys:@[@"chave1",@"chave2"]];
+    NSLog(@"dicionario fixo: %@", dicionarioFixo);
+    
+    // acessando um elemento
+    NSString* valorDaChave1 = [dicionarioFixo objectForKey:@"chave1"];
+    NSLog(@"valor da chave 1: %@", valorDaChave1);
+    
     return YES;
 }
 
