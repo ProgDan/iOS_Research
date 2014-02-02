@@ -19,6 +19,9 @@
 		65A5AA35189EAABD0044D02C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A5AA1D189EAABD0044D02C /* UIKit.framework */; };
 		65A5AA3D189EAABD0044D02C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65A5AA3B189EAABD0044D02C /* InfoPlist.strings */; };
 		65A5AA3F189EAABD0044D02C /* ProtocolosDelegatesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A5AA3E189EAABD0044D02C /* ProtocolosDelegatesTests.m */; };
+		65A5AA4E189EAAFD0044D02C /* Aluno.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A5AA49189EAAFD0044D02C /* Aluno.m */; };
+		65A5AA4F189EAAFD0044D02C /* Pessoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A5AA4B189EAAFD0044D02C /* Pessoa.m */; };
+		65A5AA50189EAAFD0044D02C /* Professor.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A5AA4D189EAAFD0044D02C /* Professor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,12 @@
 		65A5AA3A189EAABD0044D02C /* ProtocolosDelegatesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProtocolosDelegatesTests-Info.plist"; sourceTree = "<group>"; };
 		65A5AA3C189EAABD0044D02C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65A5AA3E189EAABD0044D02C /* ProtocolosDelegatesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtocolosDelegatesTests.m; sourceTree = "<group>"; };
+		65A5AA48189EAAFD0044D02C /* Aluno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aluno.h; sourceTree = "<group>"; };
+		65A5AA49189EAAFD0044D02C /* Aluno.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aluno.m; sourceTree = "<group>"; };
+		65A5AA4A189EAAFD0044D02C /* Pessoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pessoa.h; sourceTree = "<group>"; };
+		65A5AA4B189EAAFD0044D02C /* Pessoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pessoa.m; sourceTree = "<group>"; };
+		65A5AA4C189EAAFD0044D02C /* Professor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Professor.h; sourceTree = "<group>"; };
+		65A5AA4D189EAAFD0044D02C /* Professor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Professor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +118,12 @@
 			children = (
 				65A5AA28189EAABD0044D02C /* AppDelegate.h */,
 				65A5AA29189EAABD0044D02C /* AppDelegate.m */,
+				65A5AA48189EAAFD0044D02C /* Aluno.h */,
+				65A5AA49189EAAFD0044D02C /* Aluno.m */,
+				65A5AA4A189EAAFD0044D02C /* Pessoa.h */,
+				65A5AA4B189EAAFD0044D02C /* Pessoa.m */,
+				65A5AA4C189EAAFD0044D02C /* Professor.h */,
+				65A5AA4D189EAAFD0044D02C /* Professor.m */,
 				65A5AA2B189EAABD0044D02C /* Images.xcassets */,
 				65A5AA20189EAABD0044D02C /* Supporting Files */,
 			);
@@ -239,7 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65A5AA4E189EAAFD0044D02C /* Aluno.m in Sources */,
+				65A5AA50189EAAFD0044D02C /* Professor.m in Sources */,
 				65A5AA2A189EAABD0044D02C /* AppDelegate.m in Sources */,
+				65A5AA4F189EAAFD0044D02C /* Pessoa.m in Sources */,
 				65A5AA26189EAABD0044D02C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
