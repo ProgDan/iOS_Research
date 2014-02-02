@@ -45,6 +45,37 @@
     Pessoa* irmaoVelho = [[Pessoa alloc] initWithNome:@"Eduardo" withIdade:35];
     [dicionario setObject:irmaoVelho forKey:@"irmaoVelho"];
     
+    // 01 passo : carregar o arquivo PLIST na memória
+    
+    // pegando o caminho do arquivo
+    NSString* caminhoArquivo = [[NSBundle mainBundle] pathForResource:@"lista_pessoas" ofType:@"plist"];
+    
+    // carrega os dados em memória
+    NSArray* vetorPessoas = [[NSArray alloc] initWithContentsOfFile:caminhoArquivo];
+    
+    NSLog(@"vetor: %@", vetorPessoas);
+    
+    // 02 passo : criar o vetor de pessoas (vazio)
+    NSMutableArray* listaPessoas = [[NSMutableArray alloc] init];
+    
+    // 03 passo : percorrer o vetor de Dicionários e criar objetos PESSOA
+    for (int i=0; i< vetorPessoas.count; i++) {
+        // pegar o dicionário com as informações de 1 pessoa
+        NSDictionary* info = [vetorPessoas objectAtIndex:i];
+        
+        // pegar as informações
+        NSString* nome = [info objectForKey:@"nome"];
+        NSNumber* idade = [info objectForKey:@"idade"];
+        
+        Pessoa* pessoa = [[Pessoa alloc] initWithNome:nome withIdade:[idade intValue]];
+        
+        // 04 passo : adicionar o objeto PESSSOA no vetor de pessoas
+        [listaPessoas addObject:pessoa];
+    }
+    
+    // 05 passo : imprimir o vetor de PESSOAS
+    NSLog(@"vetor objetos: %@", listaPessoas);
+    
     
     return YES;
 }
