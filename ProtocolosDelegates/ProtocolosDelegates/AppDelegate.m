@@ -32,7 +32,7 @@
     [professor1 temperarCarne];
     [professor1 acenderChurrasqueira];
     
-    if(professor1 respondsToSelector:@selector(servirCarne)) {
+    if([professor1 respondsToSelector:@selector(servirCarne)]) {
         [professor1 servirCarne];
     }
     else {
