@@ -28,9 +28,27 @@
 
 // Esconder o teclado
 -(BOOL)textFieldShouldReturn:(UITextField *)textField {
-    [textField resignFirstResponder];
+    NSLog(@"passou por aqui...");
     
+    [textField resignFirstResponder];
     return TRUE;
+}
+
+// Filtrando a entrada
+-(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    if([string isEqualToString:@"0"] ||
+       [string isEqualToString:@"1"] ||
+       [string isEqualToString:@"2"] ||
+       [string isEqualToString:@"3"] ||
+       [string isEqualToString:@"4"] ||
+       [string isEqualToString:@"5"] ||
+       [string isEqualToString:@"6"] ||
+       [string isEqualToString:@"7"] ||
+       [string isEqualToString:@"8"] ||
+       [string isEqualToString:@"9"]){
+        return TRUE;
+    }
+    return FALSE;
 }
 
 @end
