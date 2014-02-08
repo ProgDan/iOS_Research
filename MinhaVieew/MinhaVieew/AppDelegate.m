@@ -36,6 +36,7 @@
     label.backgroundColor = [UIColor blackColor];
     label.textAlignment = NSTextAlignmentCenter;
     label.font = [UIFont systemFontOfSize:30];
+    label.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:20];
     
     // Incluindo o componente na View
     [self.window addSubview:label];
