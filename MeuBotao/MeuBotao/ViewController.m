@@ -40,6 +40,11 @@
 }
 
 - (IBAction)mudouValor:(UISlider *)sender {
+    self.label.alpha = (float)sender.value/100;
+    
+    float altura = sender.value;
+    self.label.frame = CGRectMake(10, 32, 300, altura);
+    
     NSLog(@"%d", (int)sender.value);
 }
 
