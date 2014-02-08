@@ -39,7 +39,7 @@
     label.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:20];
     
     // Incluindo o componente na View
-    [self.window addSubview:label];
+    [view addSubview:label];
     
     // Coloca o elemento na tela
     [self.window addSubview:view];
