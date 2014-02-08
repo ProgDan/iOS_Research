@@ -10,6 +10,11 @@
 
 @interface ViewController ()
 
+// Cria um label, via código, sem conexão com o Story Board
+//@property(weak, nonatomic) UILabel *label;
+
+@property(weak, nonatomic) IBOutlet UILabel *label;
+
 @end
 
 @implementation ViewController
@@ -18,13 +23,19 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
+
+/*
     // Criando um botão manualmente...
     UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(100, 300, 100, 44)];
     [btn setTitle:@"Text" forState:UIControlStateNormal];
     
     // Adicionando o botão na tela
     [self.view addSubview:btn];
+*/
+    
+}
+
+-(IBAction)apertouBotao{
     
 }
 
