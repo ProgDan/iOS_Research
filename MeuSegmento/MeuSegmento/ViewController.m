@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *myImageView;
 
 @end
 
@@ -22,11 +23,17 @@
 - (IBAction)mudaImagem:(UISegmentedControl *)sender {
     switch (sender.selectedSegmentIndex) {
         case 0:
+        {
+            UIImage *imgGS = [UIImage imageNamed:@"bmw_R1200GS"];
+            self.myImageView.image = imgGS;
+        }
             break;
         case 1:
+            self.myImageView.image = [UIImage imageNamed:@"bmw_R1200GS2"];
             break;
         case 2:
-            break;            
+            self.myImageView.image = [UIImage imageNamed:@"bmw_G650GS.jpg"];
+            break;
         default:
             break;
     }
