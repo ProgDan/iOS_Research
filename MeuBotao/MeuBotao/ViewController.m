@@ -18,6 +18,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    // Criando um botão manualmente...
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(100, 300, 100, 44)];
+    [btn setTitle:@"Text" forState:UIControlStateNormal];
+    
+    // Adicionando o botão na tela
+    [self.view addSubview:btn];
+    
 }
 
 - (void)didReceiveMemoryWarning
