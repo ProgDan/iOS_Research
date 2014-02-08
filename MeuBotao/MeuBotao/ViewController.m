@@ -36,7 +36,7 @@
 }
 
 -(IBAction)apertouBotao{
-    
+    self.label.text = @"Novo texto";
 }
 
 - (void)didReceiveMemoryWarning
