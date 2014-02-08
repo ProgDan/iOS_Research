@@ -17,7 +17,10 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
+//    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
+    
+    // Timamndo a tela inteira
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.window.frame.size.width, self.window.frame.size.height)];
     
     UIColor * cor = [UIColor colorWithRed:0.3 green:0.4 blue:1 alpha:1];
     
