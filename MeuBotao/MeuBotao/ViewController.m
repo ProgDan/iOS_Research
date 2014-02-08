@@ -14,6 +14,7 @@
 //@property(weak, nonatomic) UILabel *label;
 
 @property(weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UISlider *slider;
 
 @end
 
@@ -34,9 +35,12 @@
 */
     
 }
-
 -(IBAction)apertouBotao{
     self.label.text = @"Novo texto";
+}
+
+- (IBAction)mudouValor:(UISlider *)sender {
+    NSLog(@"%d", (int)sender.value);
 }
 
 - (void)didReceiveMemoryWarning

@@ -40,11 +40,19 @@
                                     <action selector="apertouBotao" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qMX-aR-zlc"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="0mM-7U-s3P">
+                                <rect key="frame" x="18" y="164" width="284" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="mudouValor:" destination="vXZ-lx-hvc" eventType="valueChanged" id="OOD-5s-rRZ"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="label" destination="iAQ-BD-OB0" id="Azw-lY-Epm"/>
+                        <outlet property="slider" destination="0mM-7U-s3P" id="Dhd-J3-WD1"/>
                     </connections>
                 </viewController>
             </objects>
