@@ -21,6 +21,7 @@
 		65C0B0AD18A66562005995FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C0B08F18A66562005995FE /* UIKit.framework */; };
 		65C0B0B518A66563005995FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65C0B0B318A66563005995FE /* InfoPlist.strings */; };
 		65C0B0B718A66563005995FE /* MeuBotaoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C0B0B618A66563005995FE /* MeuBotaoTests.m */; };
+		65C0B0C118A68C9F005995FE /* bmw-r1200gs-scorpion-serket-parallel-exhaust-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 65C0B0C018A68C9F005995FE /* bmw-r1200gs-scorpion-serket-parallel-exhaust-5.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		65C0B0B218A66563005995FE /* MeuBotaoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MeuBotaoTests-Info.plist"; sourceTree = "<group>"; };
 		65C0B0B418A66563005995FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65C0B0B618A66563005995FE /* MeuBotaoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeuBotaoTests.m; sourceTree = "<group>"; };
+		65C0B0C018A68C9F005995FE /* bmw-r1200gs-scorpion-serket-parallel-exhaust-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bmw-r1200gs-scorpion-serket-parallel-exhaust-5.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		65C0B09118A66562005995FE /* MeuBotao */ = {
 			isa = PBXGroup;
 			children = (
+				65C0B0C018A68C9F005995FE /* bmw-r1200gs-scorpion-serket-parallel-exhaust-5.png */,
 				65C0B09A18A66562005995FE /* AppDelegate.h */,
 				65C0B09B18A66562005995FE /* AppDelegate.m */,
 				65C0B09D18A66562005995FE /* Main.storyboard */,
@@ -231,6 +234,7 @@
 				65C0B0A418A66562005995FE /* Images.xcassets in Resources */,
 				65C0B09618A66562005995FE /* InfoPlist.strings in Resources */,
 				65C0B09F18A66562005995FE /* Main.storyboard in Resources */,
+				65C0B0C118A68C9F005995FE /* bmw-r1200gs-scorpion-serket-parallel-exhaust-5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

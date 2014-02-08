@@ -44,7 +44,7 @@
     
     float altura = sender.value;
     
-    self.label.frame = CGRectMake(10, 32, 300, altura);
+    self.label.frame = CGRectMake(self.label.frame.origin.x, self.label.frame.origin.y, self.label.frame.size.width, altura);
     self.label.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:altura];
     
     NSLog(@"%d", (int)sender.value);
