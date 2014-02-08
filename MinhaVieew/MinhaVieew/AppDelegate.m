@@ -16,6 +16,18 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
+    
+    UIColor * cor = [UIColor colorWithRed:0.3 green:0.4 blue:1 alpha:1];
+    
+    //view.backgroundColor = [UIColor redColor];
+    view.backgroundColor = cor;
+    
+    // Coloca o elemento na tela
+    [self.window addSubview:view];
+    
+    
     return YES;
 }
 
