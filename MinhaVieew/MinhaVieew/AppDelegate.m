@@ -27,6 +27,19 @@
     //view.backgroundColor = [UIColor redColor];
     view.backgroundColor = cor;
     
+    // Criando um Label
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 100, 300, 44)];
+    
+    // Exibindo o texto no label
+    label.text = @"Hello World";
+    label.textColor = [UIColor whiteColor];
+    label.backgroundColor = [UIColor blackColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.font = [UIFont systemFontOfSize:30];
+    
+    // Incluindo o componente na View
+    [self.window addSubview:label];
+    
     // Coloca o elemento na tela
     [self.window addSubview:view];
     
