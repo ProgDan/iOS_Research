@@ -51,6 +51,7 @@
 }
 - (IBAction)escondeImagem:(UISwitch *)sender {
     self.label.hidden = !sender.isOn;
+    
 }
 
 - (void)didReceiveMemoryWarning
