@@ -21,6 +21,7 @@
 		65EBB6B118A7B0C800070F77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EBB69318A7B0C800070F77 /* UIKit.framework */; };
 		65EBB6B918A7B0C800070F77 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65EBB6B718A7B0C800070F77 /* InfoPlist.strings */; };
 		65EBB6BB18A7B0C800070F77 /* ModalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EBB6BA18A7B0C800070F77 /* ModalTests.m */; };
+		65EBB6C618A7B12800070F77 /* NovaTelaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EBB6C518A7B12800070F77 /* NovaTelaViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		65EBB6B618A7B0C800070F77 /* ModalTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ModalTests-Info.plist"; sourceTree = "<group>"; };
 		65EBB6B818A7B0C800070F77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65EBB6BA18A7B0C800070F77 /* ModalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalTests.m; sourceTree = "<group>"; };
+		65EBB6C418A7B12800070F77 /* NovaTelaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NovaTelaViewController.h; sourceTree = "<group>"; };
+		65EBB6C518A7B12800070F77 /* NovaTelaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NovaTelaViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				65EBB6A118A7B0C800070F77 /* Main.storyboard */,
 				65EBB6A418A7B0C800070F77 /* ViewController.h */,
 				65EBB6A518A7B0C800070F77 /* ViewController.m */,
+				65EBB6C418A7B12800070F77 /* NovaTelaViewController.h */,
+				65EBB6C518A7B12800070F77 /* NovaTelaViewController.m */,
 				65EBB6A718A7B0C800070F77 /* Images.xcassets */,
 				65EBB69618A7B0C800070F77 /* Supporting Files */,
 			);
@@ -249,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65EBB6C618A7B12800070F77 /* NovaTelaViewController.m in Sources */,
 				65EBB6A618A7B0C800070F77 /* ViewController.m in Sources */,
 				65EBB6A018A7B0C800070F77 /* AppDelegate.m in Sources */,
 				65EBB69C18A7B0C800070F77 /* main.m in Sources */,
