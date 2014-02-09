@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>nome</key>
+		<string>BMW R1200 GS</string>
+		<key>imagem</key>
+		<string>foto1.png</string>
+	</dict>
+	<dict>
+		<key>nome</key>
+		<string>BMW R1200 GS - Zoom</string>
+		<key>imagem</key>
+		<string>foto2.jpg</string>
+	</dict>
+	<dict>
+		<key>nome</key>
+		<string>BMW R1200 GS - Scorpion</string>
+		<key>imagem</key>
+		<string>foto3.png</string>
+	</dict>
+	<dict>
+		<key>nome</key>
+		<string>BMW G650 GS</string>
+		<key>imagem</key>
+		<string>foto4.jpg</string>
+	</dict>
+</array>
+</plist>
