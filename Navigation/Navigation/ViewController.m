@@ -20,6 +20,14 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)pushCodigo:(UIButton *)sender {
+    UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    UIViewController *novatela = [story instantiateViewControllerWithIdentifier:@"novaTela"];
+    
+    [self.navigationController pushViewController:novatela animated:YES];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

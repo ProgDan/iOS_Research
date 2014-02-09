@@ -28,6 +28,18 @@
                                     <segue destination="PhL-MQ-L3e" kind="push" id="XMp-Vl-otW"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQP-B0-uhz">
+                                <rect key="frame" x="82" y="303" width="157" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Botão Manual">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushCodigo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bhz-q6-u5R"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -40,7 +52,7 @@
         <!--View Controller-->
         <scene sceneID="MpK-AO-xqU">
             <objects>
-                <viewController id="PhL-MQ-L3e" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="novaTela" id="PhL-MQ-L3e" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VeU-3c-10Q"/>
                         <viewControllerLayoutGuide type="bottom" id="D04-wh-j0a"/>
