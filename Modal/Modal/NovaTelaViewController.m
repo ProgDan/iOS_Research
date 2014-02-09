@@ -29,6 +29,10 @@
 	// Do any additional setup after loading the view.
 }
 
+- (IBAction)voltar:(UIButton *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
