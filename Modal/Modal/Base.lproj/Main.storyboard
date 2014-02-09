@@ -17,14 +17,25 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6D-38-1ae">
-                                <rect key="frame" x="110" y="410" width="100" height="30"/>
+                                <rect key="frame" x="85" y="409" width="150" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Usando Storyboard">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="lI2-IL-b8E" kind="modal" id="mhX-uG-I9X"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dc3-bX-xYZ">
+                                <rect key="frame" x="85" y="353" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Usando Código">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="modalCodigo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hCp-YF-Y6K"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -37,7 +48,7 @@
         <!--Nova Tela View Controller-->
         <scene sceneID="yXJ-GF-777">
             <objects>
-                <viewController id="lI2-IL-b8E" customClass="NovaTelaViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="novaTela" id="lI2-IL-b8E" customClass="NovaTelaViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="X6u-ra-U5H"/>
                         <viewControllerLayoutGuide type="bottom" id="jlC-Fs-7Bf"/>
@@ -63,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUu-7d-E3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="638" y="17"/>
+            <point key="canvasLocation" x="690" y="53"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

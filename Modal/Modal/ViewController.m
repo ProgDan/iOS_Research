@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NovaTelaViewController.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,20 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (IBAction)modalCodigo:(UIButton *)sender {
+    // Acessando o Story Board
+    UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    
+    // Acessando a nova tela
+    NovaTelaViewController *tela = [story instantiateViewControllerWithIdentifier:@"novaTela"];
+    
+    // Modificando a animação
+    tela.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    
+    // Apresentando a nova tela
+    [self presentViewController:tela animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning
