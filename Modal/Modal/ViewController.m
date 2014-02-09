@@ -28,6 +28,8 @@
     // Acessando a nova tela
     NovaTelaViewController *tela = [story instantiateViewControllerWithIdentifier:@"novaTela"];
     
+    tela.strTexto = @"Qualquer texto";
+    
     // Modificando a animação
     tela.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     

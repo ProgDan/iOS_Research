@@ -10,4 +10,6 @@
 
 @interface NovaTelaViewController : UIViewController
 
+@property(nonatomic, strong) NSString *strTexto;
+
 @end

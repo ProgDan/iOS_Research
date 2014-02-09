@@ -9,6 +9,7 @@
 #import "NovaTelaViewController.h"
 
 @interface NovaTelaViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *lblTexto;
 
 @end
 
@@ -27,6 +28,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    self.lblTexto.text = self.strTexto;
 }
 
 - (IBAction)voltar:(UIButton *)sender {
