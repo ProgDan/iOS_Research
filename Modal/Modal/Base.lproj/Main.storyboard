@@ -34,10 +34,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Nova Tela View Controller-->
         <scene sceneID="yXJ-GF-777">
             <objects>
-                <viewController id="lI2-IL-b8E" sceneMemberID="viewController">
+                <viewController id="lI2-IL-b8E" customClass="NovaTelaViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="X6u-ra-U5H"/>
                         <viewControllerLayoutGuide type="bottom" id="jlC-Fs-7Bf"/>
