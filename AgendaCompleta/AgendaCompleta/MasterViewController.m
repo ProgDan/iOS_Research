@@ -30,14 +30,25 @@
     
     arrAgenda = [NSMutableArray new];
     
-    NSDictionary *amanda = [[NSDictionary alloc] initWithObjects:@[@"Amanda",@"Ferraz",@"9999-9999"] forKeys:@[@"Nome",@"Sobrenome",@"Telefone" ]];
-    NSDictionary *eliseu = [[NSDictionary alloc] initWithObjects:@[@"Eliseu",@"Alves",@"9834-1234"] forKeys:@[@"Nome",@"Sobrenome",@"Telefone" ]];
-    NSDictionary *fernando = [[NSDictionary alloc] initWithObjects:@[@"Fernando",@"Batista",@"9554-4321"] forKeys:@[@"Nome",@"Sobrenome",@"Telefone" ]];
+    NSString *filepath = [NSHomeDirectory() stringByAppendingString:@"/Documents/agenda.plist"];
     
-    [arrAgenda addObject:amanda];
-    [arrAgenda addObject:eliseu];
-    [arrAgenda addObject:fernando];
+    if([[NSFileManager defaultManager]fileExistsAtPath:filepath])
+    {
+        arrAgenda = [NSMutableArray arrayWithContentsOfFile:filepath];
+    }
+    else
+    {
+        NSDictionary *amanda = [[NSDictionary alloc] initWithObjects:@[@"Amanda",@"Ferraz",@"9999-9999"] forKeys:@[@"Nome",@"Sobrenome",@"Telefone" ]];
+        NSDictionary *eliseu = [[NSDictionary alloc] initWithObjects:@[@"Eliseu",@"Alves",@"9834-1234"] forKeys:@[@"Nome",@"Sobrenome",@"Telefone" ]];
+        NSDictionary *fernando = [[NSDictionary alloc] initWithObjects:@[@"Fernando",@"Batista",@"9554-4321"] forKeys:@[@"Nome",@"Sobrenome",@"Telefone" ]];
     
+        [arrAgenda addObject:amanda];
+        [arrAgenda addObject:eliseu];
+        [arrAgenda addObject:fernando];
+        
+        // Grava o array no arquivo plist
+        [arrAgenda writeToFile:filepath atomically:NO];
+    }
 }
 
 - (void)didReceiveMemoryWarning
