@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVS-mB-Qp1">
-                                <rect key="frame" x="0.0" y="20" width="320" height="416"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="344"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
@@ -53,32 +53,60 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="hMz-Kg-axZ">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="hMz-Kg-axZ">
                                 <rect key="frame" x="142" y="221" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="color" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="FPV-oq-Yg7">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="t9D-gP-CFd"/>
+                                </connections>
+                            </searchBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NyX-mt-fym">
+                                <rect key="frame" x="0.0" y="64" width="320" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Navegar"/>
+                                    <segment title="Buscar"/>
+                                </segments>
+                                <connections>
+                                    <action selector="navegaBusca:" destination="vXZ-lx-hvc" eventType="valueChanged" id="VIC-1p-jAY"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="uQl-Fm-1zs" firstAttribute="top" secondItem="9Gd-1u-qpe" secondAttribute="bottom" id="099-YC-IxI"/>
-                            <constraint firstAttribute="centerX" secondItem="hMz-Kg-axZ" secondAttribute="centerX" id="BhT-PU-nYR"/>
+                            <constraint firstItem="hMz-Kg-axZ" firstAttribute="centerX" secondItem="9Gd-1u-qpe" secondAttribute="centerX" id="7Pr-yb-vWJ"/>
+                            <constraint firstItem="hMz-Kg-axZ" firstAttribute="top" secondItem="5J3-OK-zDB" secondAttribute="bottom" constant="201" id="8Ew-VV-EY1"/>
+                            <constraint firstAttribute="trailing" secondItem="NyX-mt-fym" secondAttribute="trailing" id="Cfr-zj-OrH"/>
+                            <constraint firstItem="FPV-oq-Yg7" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" id="GM5-n6-b2H"/>
+                            <constraint firstItem="NyX-mt-fym" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Izr-VD-AXk"/>
                             <constraint firstAttribute="trailing" secondItem="9Gd-1u-qpe" secondAttribute="trailing" id="Kmm-E8-RPC"/>
-                            <constraint firstAttribute="centerY" secondItem="hMz-Kg-axZ" secondAttribute="centerY" id="ONZ-tf-9GA"/>
+                            <constraint firstAttribute="trailing" secondItem="FPV-oq-Yg7" secondAttribute="trailing" id="LtG-DK-JSa"/>
                             <constraint firstItem="uQl-Fm-1zs" firstAttribute="top" secondItem="hVS-mB-Qp1" secondAttribute="bottom" constant="44" id="Qdy-Wf-E1f"/>
                             <constraint firstAttribute="trailing" secondItem="hVS-mB-Qp1" secondAttribute="trailing" id="Vxg-KV-OPt"/>
-                            <constraint firstItem="hVS-mB-Qp1" firstAttribute="top" secondItem="5J3-OK-zDB" secondAttribute="bottom" id="cZf-ma-W1g"/>
+                            <constraint firstItem="hVS-mB-Qp1" firstAttribute="top" secondItem="5J3-OK-zDB" secondAttribute="bottom" constant="72" id="cZf-ma-W1g"/>
+                            <constraint firstItem="NyX-mt-fym" firstAttribute="top" secondItem="5J3-OK-zDB" secondAttribute="bottom" constant="44" id="gmS-LO-juI"/>
                             <constraint firstItem="hVS-mB-Qp1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="h4o-6P-9qG"/>
+                            <constraint firstItem="FPV-oq-Yg7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="lgg-uv-diW"/>
                             <constraint firstItem="9Gd-1u-qpe" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="v3l-Xt-uLY"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="busca" destination="FPV-oq-Yg7" id="Omp-nG-J2w"/>
+                        <outlet property="segment" destination="NyX-mt-fym" id="sA3-pB-ZR2"/>
                         <outlet property="spinner" destination="hMz-Kg-axZ" id="Pzv-Z0-PBP"/>
                         <outlet property="web" destination="hVS-mB-Qp1" id="eIM-rx-EVL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="143" y="68"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
