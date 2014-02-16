@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIWebView *web;
 
 @end
 
@@ -18,6 +19,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    // A URL que será carregada
+    NSURL *url = [NSURL URLWithString:@"http://www.google.com"];
+    
+    // Cria uma requisição web
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    // Carrega a página usando um request
+    [self.web loadRequest:request];
 }
 
 - (void)didReceiveMemoryWarning
