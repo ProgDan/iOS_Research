@@ -30,6 +30,10 @@
                 // Inicializa o serviço
                 self.locManager = [CLLocationManager new];
                 self.locManager.delegate = self;
+                
+                // monitor...
+          //      [self.locManager setActivityType:CLActivityTypeAutomotiveNavigation];
+                
             }
             [self.locManager startUpdatingLocation];
         }
@@ -79,6 +83,9 @@
     [self.locManager stopUpdatingLocation];
     
     CLLocation *localizacao = [locations lastObject];
+    
+    // Automotivo...
+    NSLog(@"Atualizou %f %f", localizacao.coordinate.latitude, localizacao.coordinate.longitude);
     
     MKCoordinateSpan zoom = MKCoordinateSpanMake(0.005,0.005);
     
