@@ -13,7 +13,12 @@
 // A partir do Xcode 5.0
 // @import AVFoundation;
 
-@interface ViewController : UIViewController
+// Como usar delegate
+// Protocolo
+// Implemnentar os métodos
+// Conectar os objetos
+
+@interface ViewController : UIViewController <AVAudioPlayerDelegate>
 
 @property (nonatomic, strong) AVAudioPlayer *player;
 @property (nonatomic, strong) AVAudioRecorder *gravador;

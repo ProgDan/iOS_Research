@@ -38,6 +38,7 @@
 -(void) criarNovoPlayerParaArquivo:(NSURL*)urlAudio{
     // Criando um novo player passando a url para o arquivo de audio que desejamos reproduzir
     self.player = [[AVAudioPlayer alloc]initWithContentsOfURL:urlAudio error:nil];
+    self.player.delegate = self;
     
     [self.player play];
     
@@ -113,6 +114,14 @@
         self.botaoIniciarGravacao.hidden = NO;
         [self.botaoReproduzir setTitle:@"Reproduzir Gravação" forState:UIControlStateNormal];
     }
+}
+
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag {
+    self.botaoPlayer.hidden = NO;
+    self.botaoIniciarGravacao.hidden = NO;
+    self.botaoReproduzir.hidden = NO;
+    [self.botaoReproduzir setTitle:@"Reproduzir Gravação" forState:UIControlStateNormal];
+    [self.botaoPlayer setTitle:@"Iniciar Player" forState:UIControlStateNormal];
 }
 
 @end
