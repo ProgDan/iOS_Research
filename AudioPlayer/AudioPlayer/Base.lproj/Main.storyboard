@@ -49,6 +49,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="botaoIniciarGravacao" destination="mlS-aN-bh1" id="zPN-Sr-teQ"/>
+                        <outlet property="botaoPlayer" destination="VPi-fe-8hn" id="jfm-kq-E3b"/>
+                        <outlet property="botaoReproduzir" destination="xPa-sO-giS" id="ac3-S6-GGC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

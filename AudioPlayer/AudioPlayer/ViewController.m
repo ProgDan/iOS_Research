@@ -13,6 +13,10 @@
 - (IBAction)gravarNovoAudioClicado:(UIButton *)sender;
 - (IBAction)reproduzirAudioClicado:(UIButton *)sender;
 
+@property (weak, nonatomic) IBOutlet UIButton *botaoPlayer;
+@property (weak, nonatomic) IBOutlet UIButton *botaoIniciarGravacao;
+@property (weak, nonatomic) IBOutlet UIButton *botaoReproduzir;
+
 @property (nonatomic, strong) NSURL *urlGravacao;
 
 @end
@@ -45,6 +49,11 @@
         [self.player stop];
         self.player = nil;
         
+        // Ajustes de interface
+        self.botaoIniciarGravacao.hidden = NO;
+        self.botaoReproduzir.hidden = NO;
+        [self.botaoPlayer setTitle:@"Iniciar Player" forState:UIControlStateNormal];
+        
         return;
     }
     
@@ -55,6 +64,11 @@
     NSURL *urlArquivo = [NSURL fileURLWithPath:path];
     
     [self criarNovoPlayerParaArquivo:urlArquivo];
+    
+    // Ajustes de interface
+    self.botaoIniciarGravacao.hidden = YES;
+    self.botaoReproduzir.hidden = YES;
+    [self.botaoPlayer setTitle:@"Encerrar Player" forState:UIControlStateNormal];
 }
 
 - (IBAction)gravarNovoAudioClicado:(UIButton *)sender {
@@ -62,6 +76,9 @@
         [self.gravador stop];
         self.gravador = nil;
         
+        self.botaoReproduzir.hidden = NO;
+        self.botaoPlayer.hidden = NO;
+        [self.botaoIniciarGravacao setTitle:@"Gravar Novo Audio" forState:UIControlStateNormal];
         return;
     }
     
@@ -74,11 +91,27 @@
     self.gravador = [[AVAudioRecorder alloc] initWithURL:self.urlGravacao settings:nil error:nil];
     
     [self.gravador record];
+    
+    self.botaoReproduzir.hidden = YES;
+    self.botaoPlayer.hidden = YES;
+    [self.botaoIniciarGravacao setTitle:@"Parar Gravação" forState:UIControlStateNormal];
 }
 
 - (IBAction)reproduzirAudioClicado:(UIButton *)sender {
-    if (self.urlGravacao) {
+    if (self.urlGravacao && !self.player) {
         [self criarNovoPlayerParaArquivo:self.urlGravacao];
+        
+        self.botaoPlayer.hidden = YES;
+        self.botaoIniciarGravacao.hidden = YES;
+        [self.botaoReproduzir setTitle:@"Parar Reprodução" forState:UIControlStateNormal];
+    }
+    else {
+        [self.player stop];
+        self.player = nil;
+        
+        self.botaoPlayer.hidden = NO;
+        self.botaoIniciarGravacao.hidden = NO;
+        [self.botaoReproduzir setTitle:@"Reproduzir Gravação" forState:UIControlStateNormal];
     }
 }
 
