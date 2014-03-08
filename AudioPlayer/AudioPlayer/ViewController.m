@@ -17,6 +17,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *botaoIniciarGravacao;
 @property (weak, nonatomic) IBOutlet UIButton *botaoReproduzir;
 
+// Representa o recurso de audio do iOS
+@property (nonatomic, weak) AVAudioSession *sessaoAudio;
+
 @property (nonatomic, strong) NSURL *urlGravacao;
 
 @end
@@ -27,6 +30,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    // Recuperando a referência a instância compartilhada
+    self.sessaoAudio = [AVAudioSession sharedInstance];
+    [self.sessaoAudio setActive:YES error:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,6 +46,9 @@
     // Criando um novo player passando a url para o arquivo de audio que desejamos reproduzir
     self.player = [[AVAudioPlayer alloc]initWithContentsOfURL:urlAudio error:nil];
     self.player.delegate = self;
+    
+    // Mudar o tipo da sessão
+    [self.sessaoAudio setCategory:AVAudioSessionCategoryPlayback error:nil];
     
     [self.player play];
     
@@ -72,6 +82,8 @@
     [self.botaoPlayer setTitle:@"Encerrar Player" forState:UIControlStateNormal];
 }
 
+#pragma mark Gravador de som
+
 - (IBAction)gravarNovoAudioClicado:(UIButton *)sender {
     if(self.gravador){
         [self.gravador stop];
@@ -90,6 +102,9 @@
     self.urlGravacao = [NSURL fileURLWithPath:path];
     
     self.gravador = [[AVAudioRecorder alloc] initWithURL:self.urlGravacao settings:nil error:nil];
+
+    // Mudar o tipo da sessão
+    [self.sessaoAudio setCategory:AVAudioSessionCategoryRecord error:nil];
     
     [self.gravador record];
     
@@ -115,6 +130,8 @@
         [self.botaoReproduzir setTitle:@"Reproduzir Gravação" forState:UIControlStateNormal];
     }
 }
+
+#pragma mark AVAudioPlayerDelegate
 
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag {
     self.botaoPlayer.hidden = NO;
