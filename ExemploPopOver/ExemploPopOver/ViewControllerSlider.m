@@ -33,6 +33,32 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    NSArray *subViewSlider = self.sldBlue.subviews;
+    NSLog(@"%d", subViewSlider.count);
+    
+    UIView *v = [subViewSlider objectAtIndex:2];
+    UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake(10, 7, 15, 15)];
+    lbl.backgroundColor = [UIColor clearColor];
+    lbl.text = @"B";
+    [v addSubview:lbl];
+    
+    subViewSlider = self.sldGreen.subviews;
+    v = [subViewSlider objectAtIndex:2];
+    lbl = [[UILabel alloc] initWithFrame:CGRectMake(10, 7, 15, 15)];
+    lbl.backgroundColor = [UIColor clearColor];
+    lbl.text = @"G";
+    [v addSubview:lbl];
+    
+    subViewSlider = self.sldRed.subviews;
+    v = [subViewSlider objectAtIndex:2];
+    lbl = [[UILabel alloc] initWithFrame:CGRectMake(10, 7, 15, 15)];
+    lbl.backgroundColor = [UIColor clearColor];
+    lbl.text = @"R";
+    [v addSubview:lbl];
 }
 
 - (void)didReceiveMemoryWarning
