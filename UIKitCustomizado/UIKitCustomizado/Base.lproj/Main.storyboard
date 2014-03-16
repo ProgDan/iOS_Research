@@ -21,11 +21,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6Ls-D5-aQj">
-                                <rect key="frame" x="99" y="168" width="123" height="29"/>
+                                <rect key="frame" x="20" y="168" width="280" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
+                                    <segment title="Third"/>
                                 </segments>
                             </segmentedControl>
                         </subviews>
@@ -39,7 +40,7 @@
             </objects>
             <point key="canvasLocation" x="1308" y="16"/>
         </scene>
-        <!--View Controller - Item-->
+        <!--View Controller - View 2-->
         <scene sceneID="U86-2M-NG6">
             <objects>
                 <viewController id="NCi-rq-jPV" sceneMemberID="viewController">
@@ -52,7 +53,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Jwf-wY-aVS"/>
+                    <tabBarItem key="tabBarItem" title="View 2" image="05-shuffle.png" id="Jwf-wY-aVS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wL7-Y0-FuA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -64,9 +65,10 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="v9h-FR-31D" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="2Jn-3y-DjU">
+                    <tabBar key="tabBar" contentMode="scaleToFill" backgroundImage="tab_bg.png" selectionIndicatorImage="tab_select_indicator.png" id="2Jn-3y-DjU">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="7bw-Ot-I9i" kind="relationship" relationship="viewControllers" id="m2n-Po-3Eh"/>
@@ -77,11 +79,11 @@
             </objects>
             <point key="canvasLocation" x="256" y="16"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Navigation Controller - View 1-->
         <scene sceneID="7DW-1f-6MG">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7bw-Ot-I9i" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="jLD-gD-Qs8"/>
+                    <tabBarItem key="tabBarItem" title="View 1" image="01-refresh.png" id="jLD-gD-Qs8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Ya-il-qt6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -97,6 +99,12 @@
             <point key="canvasLocation" x="782" y="16"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="01-refresh.png" width="24" height="26"/>
+        <image name="05-shuffle.png" width="28" height="20"/>
+        <image name="tab_bg.png" width="320" height="49"/>
+        <image name="tab_select_indicator.png" width="72" height="45"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

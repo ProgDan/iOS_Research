@@ -26,7 +26,42 @@
 
     UIImage *imageNavBarLand = [[UIImage imageNamed:@"navbar_32"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
     [[UINavigationBar appearance] setBackgroundImage:imageNavBarLand forBarMetrics:UIBarMetricsLandscapePhone];
-
+    
+    // Customizando textos
+    
+    // BarButton
+    NSDictionary *dictBotao = @{NSForegroundColorAttributeName: [UIColor blackColor], NSFontAttributeName: [UIFont fontWithName:@"Futura-CondensedMedium" size:15]};
+    [[UIBarButtonItem appearance] setTitleTextAttributes:dictBotao forState:UIControlStateNormal];
+    
+    // NavigationBar
+    NSDictionary *dictBar = @{NSForegroundColorAttributeName: [UIColor redColor], NSFontAttributeName: [UIFont fontWithName:@"FuturaStd-BoldOblique" size:19]};
+    [[UINavigationBar appearance] setTitleTextAttributes:dictBar];
+    
+    // Customizar o TabBar
+    // Diretamente no StoryBoard
+    
+    // Customizando o Slider
+    UIImage *minImagem = [[UIImage imageNamed:@"slider_minimum"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 5, 0, 0)];
+    UIImage *maxImagem = [[UIImage imageNamed:@"slider_maximum"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 5)];
+    UIImage *thumb = [UIImage imageNamed:@"corinthians"];
+    
+    [[UISlider appearance] setMaximumTrackImage:maxImagem forState:UIControlStateNormal];
+    [[UISlider appearance] setMinimumTrackImage:minImagem forState:UIControlStateNormal];
+    [[UISlider appearance] setThumbImage:thumb forState:UIControlStateNormal];
+    
+    // SegmentedControl
+    UIImage *segSelecionado = [[UIImage imageNamed:@"segcontrol_sel"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 12, 0, 12)];
+    UIImage *segNaoSelecionado = [[UIImage imageNamed:@"segcontrol_uns"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 12, 0, 12)];
+    UIImage *segSimNao = [[UIImage imageNamed:@"segcontrol_sel-uns"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 12, 0, 12)];
+    UIImage *segNaoSim = [[UIImage imageNamed:@"segcontrol_uns-sel"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 12, 0, 12)];
+    UIImage *segNaoNao = [[UIImage imageNamed:@"segcontrol_uns-uns"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 12, 0, 12)];
+    
+    [[UISegmentedControl appearance] setBackgroundImage:segSelecionado forState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
+    [[UISegmentedControl appearance] setBackgroundImage:segNaoSelecionado forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [[UISegmentedControl appearance] setDividerImage:segSimNao forLeftSegmentState:UIControlStateSelected rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [[UISegmentedControl appearance] setDividerImage:segNaoSim forLeftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
+    [[UISegmentedControl appearance] setDividerImage:segNaoNao forLeftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
