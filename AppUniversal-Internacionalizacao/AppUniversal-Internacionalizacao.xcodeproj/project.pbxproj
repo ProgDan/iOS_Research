@@ -22,7 +22,7 @@
 		65097D0418D5F0A7006F4022 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65097CE318D5F0A7006F4022 /* UIKit.framework */; };
 		65097D0C18D5F0A7006F4022 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65097D0A18D5F0A7006F4022 /* InfoPlist.strings */; };
 		65097D0E18D5F0A7006F4022 /* AppUniversal_InternacionalizacaoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65097D0D18D5F0A7006F4022 /* AppUniversal_InternacionalizacaoTests.m */; };
-		65097D1818D60BC5006F4022 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65097D1718D60BC5006F4022 /* Localizable.strings */; };
+		65097D1918D60C24006F4022 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65097D1B18D60C24006F4022 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,9 @@
 		65097D0918D5F0A7006F4022 /* AppUniversal-InternacionalizacaoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppUniversal-InternacionalizacaoTests-Info.plist"; sourceTree = "<group>"; };
 		65097D0B18D5F0A7006F4022 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65097D0D18D5F0A7006F4022 /* AppUniversal_InternacionalizacaoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppUniversal_InternacionalizacaoTests.m; sourceTree = "<group>"; };
-		65097D1718D60BC5006F4022 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		65097D1A18D60C24006F4022 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		65097D1C18D60C26006F4022 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		65097D1D18D60C90006F4022 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +126,7 @@
 				65097CF818D5F0A7006F4022 /* ViewController.m */,
 				65097CFA18D5F0A7006F4022 /* Images.xcassets */,
 				65097CE618D5F0A7006F4022 /* Supporting Files */,
-				65097D1718D60BC5006F4022 /* Localizable.strings */,
+				65097D1B18D60C24006F4022 /* Localizable.strings */,
 			);
 			path = "AppUniversal-Internacionalizacao";
 			sourceTree = "<group>";
@@ -217,6 +219,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 65097CD318D5F0A7006F4022;
 			productRefGroup = 65097CDD18D5F0A7006F4022 /* Products */;
@@ -234,7 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65097D1818D60BC5006F4022 /* Localizable.strings in Resources */,
+				65097D1918D60C24006F4022 /* Localizable.strings in Resources */,
 				65097CF618D5F0A7006F4022 /* Main_iPad.storyboard in Resources */,
 				65097CFB18D5F0A7006F4022 /* Images.xcassets in Resources */,
 				65097CF318D5F0A7006F4022 /* Main_iPhone.storyboard in Resources */,
@@ -312,6 +315,16 @@
 				65097D0B18D5F0A7006F4022 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		65097D1B18D60C24006F4022 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65097D1A18D60C24006F4022 /* Base */,
+				65097D1C18D60C26006F4022 /* en */,
+				65097D1D18D60C90006F4022 /* pt-BR */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

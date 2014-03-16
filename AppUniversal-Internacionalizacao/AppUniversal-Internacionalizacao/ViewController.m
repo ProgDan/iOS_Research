@@ -23,6 +23,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self.btnAnimar setTitle:NSLocalizedString(@"textoBotaoAnimar", nil) forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning
