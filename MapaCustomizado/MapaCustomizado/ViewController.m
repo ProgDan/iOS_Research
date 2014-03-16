@@ -54,8 +54,36 @@
     [self.mapa addOverlay:poligono];
     
     
+    // Como traçar rota no mapa
+    CLLocationCoordinate2D minhaCasa = CLLocationCoordinate2DMake(-23.553686, -46.551188);
+    MKPlacemark *iaiPlace = [[MKPlacemark alloc] initWithCoordinate:pino.coordinate addressDictionary:nil];
+    MKPlacemark *casaPlace = [[MKPlacemark alloc] initWithCoordinate:minhaCasa addressDictionary:nil];
     
+    // criando a requisição de busca
+    MKDirectionsRequest *requisicao = [MKDirectionsRequest new];
     
+    // setando a origem
+    requisicao.source = [[MKMapItem alloc] initWithPlacemark:iaiPlace];
+    
+    // setando o destino
+    requisicao.destination = [[MKMapItem alloc] initWithPlacemark:casaPlace];
+    
+    // Configurando o tipo de transporte
+    requisicao.transportType = MKDirectionsTransportTypeWalking;
+    
+    MKDirections *roteador = [[MKDirections alloc] initWithRequest:requisicao];
+    
+    // Mandar calcular a rota e quando terminar, executar o bloco
+    [roteador calculateDirectionsWithCompletionHandler:^(MKDirectionsResponse *response, NSError *error) {
+        if (error) {
+            NSLog(@"%@", error);
+        }
+        else {
+            // dentro do parâmetro response, temos a rota em questão
+            MKRoute *rota = [response.routes firstObject];
+            [self.mapa addOverlay:rota.polyline];
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning
