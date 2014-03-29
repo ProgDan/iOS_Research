@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6587B95218E7520000F04FB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6587B95118E7520000F04FB4 /* Foundation.framework */; };
+		6587B95418E7520000F04FB4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6587B95318E7520000F04FB4 /* CoreGraphics.framework */; };
+		6587B95618E7520000F04FB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6587B95518E7520000F04FB4 /* UIKit.framework */; };
+		6587B95C18E7520000F04FB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6587B95A18E7520000F04FB4 /* InfoPlist.strings */; };
+		6587B95E18E7520000F04FB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6587B95D18E7520000F04FB4 /* main.m */; };
+		6587B96218E7520000F04FB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6587B96118E7520000F04FB4 /* AppDelegate.m */; };
+		6587B96518E7520000F04FB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6587B96318E7520000F04FB4 /* Main.storyboard */; };
+		6587B96818E7520000F04FB4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6587B96718E7520000F04FB4 /* ViewController.m */; };
+		6587B96A18E7520000F04FB4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6587B96918E7520000F04FB4 /* Images.xcassets */; };
+		6587B97118E7520000F04FB4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6587B97018E7520000F04FB4 /* XCTest.framework */; };
+		6587B97218E7520000F04FB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6587B95118E7520000F04FB4 /* Foundation.framework */; };
+		6587B97318E7520000F04FB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6587B95518E7520000F04FB4 /* UIKit.framework */; };
+		6587B97B18E7520000F04FB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6587B97918E7520000F04FB4 /* InfoPlist.strings */; };
+		6587B97D18E7520000F04FB4 /* MonitorExternoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6587B97C18E7520000F04FB4 /* MonitorExternoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6587B97418E7520000F04FB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6587B94618E7520000F04FB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6587B94D18E7520000F04FB4;
+			remoteInfo = MonitorExterno;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6587B94E18E7520000F04FB4 /* MonitorExterno.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonitorExterno.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6587B95118E7520000F04FB4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6587B95318E7520000F04FB4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6587B95518E7520000F04FB4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6587B95918E7520000F04FB4 /* MonitorExterno-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MonitorExterno-Info.plist"; sourceTree = "<group>"; };
+		6587B95B18E7520000F04FB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6587B95D18E7520000F04FB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6587B95F18E7520000F04FB4 /* MonitorExterno-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MonitorExterno-Prefix.pch"; sourceTree = "<group>"; };
+		6587B96018E7520000F04FB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6587B96118E7520000F04FB4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6587B96418E7520000F04FB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6587B96618E7520000F04FB4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6587B96718E7520000F04FB4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6587B96918E7520000F04FB4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6587B96F18E7520000F04FB4 /* MonitorExternoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonitorExternoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6587B97018E7520000F04FB4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6587B97818E7520000F04FB4 /* MonitorExternoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MonitorExternoTests-Info.plist"; sourceTree = "<group>"; };
+		6587B97A18E7520000F04FB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6587B97C18E7520000F04FB4 /* MonitorExternoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonitorExternoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6587B94B18E7520000F04FB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6587B95418E7520000F04FB4 /* CoreGraphics.framework in Frameworks */,
+				6587B95618E7520000F04FB4 /* UIKit.framework in Frameworks */,
+				6587B95218E7520000F04FB4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6587B96C18E7520000F04FB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6587B97118E7520000F04FB4 /* XCTest.framework in Frameworks */,
+				6587B97318E7520000F04FB4 /* UIKit.framework in Frameworks */,
+				6587B97218E7520000F04FB4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6587B94518E7520000F04FB4 = {
+			isa = PBXGroup;
+			children = (
+				6587B95718E7520000F04FB4 /* MonitorExterno */,
+				6587B97618E7520000F04FB4 /* MonitorExternoTests */,
+				6587B95018E7520000F04FB4 /* Frameworks */,
+				6587B94F18E7520000F04FB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6587B94F18E7520000F04FB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6587B94E18E7520000F04FB4 /* MonitorExterno.app */,
+				6587B96F18E7520000F04FB4 /* MonitorExternoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6587B95018E7520000F04FB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6587B95118E7520000F04FB4 /* Foundation.framework */,
+				6587B95318E7520000F04FB4 /* CoreGraphics.framework */,
+				6587B95518E7520000F04FB4 /* UIKit.framework */,
+				6587B97018E7520000F04FB4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6587B95718E7520000F04FB4 /* MonitorExterno */ = {
+			isa = PBXGroup;
+			children = (
+				6587B96018E7520000F04FB4 /* AppDelegate.h */,
+				6587B96118E7520000F04FB4 /* AppDelegate.m */,
+				6587B96318E7520000F04FB4 /* Main.storyboard */,
+				6587B96618E7520000F04FB4 /* ViewController.h */,
+				6587B96718E7520000F04FB4 /* ViewController.m */,
+				6587B96918E7520000F04FB4 /* Images.xcassets */,
+				6587B95818E7520000F04FB4 /* Supporting Files */,
+			);
+			path = MonitorExterno;
+			sourceTree = "<group>";
+		};
+		6587B95818E7520000F04FB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6587B95918E7520000F04FB4 /* MonitorExterno-Info.plist */,
+				6587B95A18E7520000F04FB4 /* InfoPlist.strings */,
+				6587B95D18E7520000F04FB4 /* main.m */,
+				6587B95F18E7520000F04FB4 /* MonitorExterno-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6587B97618E7520000F04FB4 /* MonitorExternoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6587B97C18E7520000F04FB4 /* MonitorExternoTests.m */,
+				6587B97718E7520000F04FB4 /* Supporting Files */,
+			);
+			path = MonitorExternoTests;
+			sourceTree = "<group>";
+		};
+		6587B97718E7520000F04FB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6587B97818E7520000F04FB4 /* MonitorExternoTests-Info.plist */,
+				6587B97918E7520000F04FB4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6587B94D18E7520000F04FB4 /* MonitorExterno */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6587B98018E7520000F04FB4 /* Build configuration list for PBXNativeTarget "MonitorExterno" */;
+			buildPhases = (
+				6587B94A18E7520000F04FB4 /* Sources */,
+				6587B94B18E7520000F04FB4 /* Frameworks */,
+				6587B94C18E7520000F04FB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MonitorExterno;
+			productName = MonitorExterno;
+			productReference = 6587B94E18E7520000F04FB4 /* MonitorExterno.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6587B96E18E7520000F04FB4 /* MonitorExternoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6587B98318E7520000F04FB4 /* Build configuration list for PBXNativeTarget "MonitorExternoTests" */;
+			buildPhases = (
+				6587B96B18E7520000F04FB4 /* Sources */,
+				6587B96C18E7520000F04FB4 /* Frameworks */,
+				6587B96D18E7520000F04FB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6587B97518E7520000F04FB4 /* PBXTargetDependency */,
+			);
+			name = MonitorExternoTests;
+			productName = MonitorExternoTests;
+			productReference = 6587B96F18E7520000F04FB4 /* MonitorExternoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6587B94618E7520000F04FB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "ProgDan Software";
+				TargetAttributes = {
+					6587B96E18E7520000F04FB4 = {
+						TestTargetID = 6587B94D18E7520000F04FB4;
+					};
+				};
+			};
+			buildConfigurationList = 6587B94918E7520000F04FB4 /* Build configuration list for PBXProject "MonitorExterno" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6587B94518E7520000F04FB4;
+			productRefGroup = 6587B94F18E7520000F04FB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6587B94D18E7520000F04FB4 /* MonitorExterno */,
+				6587B96E18E7520000F04FB4 /* MonitorExternoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6587B94C18E7520000F04FB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6587B96A18E7520000F04FB4 /* Images.xcassets in Resources */,
+				6587B95C18E7520000F04FB4 /* InfoPlist.strings in Resources */,
+				6587B96518E7520000F04FB4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6587B96D18E7520000F04FB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6587B97B18E7520000F04FB4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6587B94A18E7520000F04FB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6587B96818E7520000F04FB4 /* ViewController.m in Sources */,
+				6587B96218E7520000F04FB4 /* AppDelegate.m in Sources */,
+				6587B95E18E7520000F04FB4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6587B96B18E7520000F04FB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6587B97D18E7520000F04FB4 /* MonitorExternoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6587B97518E7520000F04FB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6587B94D18E7520000F04FB4 /* MonitorExterno */;
+			targetProxy = 6587B97418E7520000F04FB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6587B95A18E7520000F04FB4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6587B95B18E7520000F04FB4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6587B96318E7520000F04FB4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6587B96418E7520000F04FB4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6587B97918E7520000F04FB4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6587B97A18E7520000F04FB4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6587B97E18E7520000F04FB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6587B97F18E7520000F04FB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6587B98118E7520000F04FB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MonitorExterno/MonitorExterno-Prefix.pch";
+				INFOPLIST_FILE = "MonitorExterno/MonitorExterno-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6587B98218E7520000F04FB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MonitorExterno/MonitorExterno-Prefix.pch";
+				INFOPLIST_FILE = "MonitorExterno/MonitorExterno-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6587B98418E7520000F04FB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MonitorExterno.app/MonitorExterno";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MonitorExterno/MonitorExterno-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MonitorExternoTests/MonitorExternoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6587B98518E7520000F04FB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MonitorExterno.app/MonitorExterno";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MonitorExterno/MonitorExterno-Prefix.pch";
+				INFOPLIST_FILE = "MonitorExternoTests/MonitorExternoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6587B94918E7520000F04FB4 /* Build configuration list for PBXProject "MonitorExterno" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6587B97E18E7520000F04FB4 /* Debug */,
+				6587B97F18E7520000F04FB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6587B98018E7520000F04FB4 /* Build configuration list for PBXNativeTarget "MonitorExterno" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6587B98118E7520000F04FB4 /* Debug */,
+				6587B98218E7520000F04FB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6587B98318E7520000F04FB4 /* Build configuration list for PBXNativeTarget "MonitorExternoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6587B98418E7520000F04FB4 /* Debug */,
+				6587B98518E7520000F04FB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6587B94618E7520000F04FB4 /* Project object */;
+}
