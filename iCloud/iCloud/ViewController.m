@@ -120,7 +120,7 @@
     self.buscaCloud.predicate = [NSPredicate predicateWithFormat:@"%K == %@", NSMetadataItemFSNameKey, @"anotacoes.plist"];
     
     // Cadastrando a viewController para receber uma notificação quando a busca acabar
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(buscaTerminou:) name:NSMetadataQueryDidFinishGatheringNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(buscaTerminou:) name:NSMetadataQueryDidFinishGatheringNotification object:self.buscaCloud];
     
     // Iniciar a busca
     [self.buscaCloud startQuery];
@@ -128,11 +128,11 @@
 
 -(void) buscaTerminou: (NSNotification *)notificacao {
     
-    [self.buscaCloud stopQuery];
     [self.buscaCloud disableUpdates];
+    [self.buscaCloud stopQuery];
     
     // Remover!
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:NSMetadataQueryDidFinishGatheringNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:NSMetadataQueryDidFinishGatheringNotification object:self.buscaCloud];
     
     NSURL *urlRemota = [[self.urlCloud URLByAppendingPathComponent:@"Documents"] URLByAppendingPathComponent:@"anotacoes.plist"];
     
