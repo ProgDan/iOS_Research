@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>DAFDE026-778F-4F45-BC18-F03F130B4CA3</string>
+	<string>B028E628-68F3-46AB-B087-F39580A378BC</string>
 	<key>IDESourceControlProjectName</key>
 	<string>TarefaBackground</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>54F53D2E-4920-4BDC-BDD7-1FEDF3E1A493</key>
+		<key>C67EC30F-1C99-4C62-BD2C-9FA3D0D2BD72</key>
 		<string>ssh://github.com/ProgDan/iOS_Research.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>TarefaBackground/TarefaBackground.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>54F53D2E-4920-4BDC-BDD7-1FEDF3E1A493</key>
+		<key>C67EC30F-1C99-4C62-BD2C-9FA3D0D2BD72</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>54F53D2E-4920-4BDC-BDD7-1FEDF3E1A493</string>
+	<string>C67EC30F-1C99-4C62-BD2C-9FA3D0D2BD72</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>54F53D2E-4920-4BDC-BDD7-1FEDF3E1A493</string>
+			<string>C67EC30F-1C99-4C62-BD2C-9FA3D0D2BD72</string>
 			<key>IDESourceControlWCCName</key>
 			<string>iOS_Research</string>
 		</dict>

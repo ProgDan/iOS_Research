@@ -2,14 +2,15 @@
 //  ViewController.m
 //  TarefaBackground
 //
-//  Created by Daniel Arndt Alves on 4/6/14.
-//  Copyright (c) 2014 ProgDan Software. All rights reserved.
+//  Created by Eduardo Lima on 4/6/14.
+//  Copyright (c) 2014 personal. All rights reserved.
 //
 
 #import "ViewController.h"
 
 @interface ViewController ()
-- (IBAction)iniciarProcessoClicado:(UIButton *)sender;
+
+- (IBAction)iniciarProcessoClicado:(id)sender;
 
 @end
 
@@ -21,51 +22,78 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    
+    [super viewWillAppear:animated];
+    
+    //[self.tabela reloadData];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)iniciarProcessoClicado:(UIButton *)sender {
-    // Iniciar uma tarefa em segundo plano
-    // Solicitar uma autorização para o iOS para rodar por um tempo (+- 10 min)
+- (IBAction)iniciarProcessoClicado:(id)sender {
     
-    // Handler - executado quando o tempo da tarefa acabar
-    UIBackgroundTaskIdentifier taskID =  [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
-        // o que quero que aconteça quando o tempo acabar
+    //Iniciar uma tarefa em segundo plano
+    //Solicitar uma autorização pro iOS para rodar por um tempo (+- 10 min)
+    //Handler - executado quando o tempo da tarefa acabar
+    UIBackgroundTaskIdentifier taskID = [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
+       
+        //O que quero que aconteça quando o tempo acabar
+        //...
         
-        
-        // Encerrar a tarefa
-        // Não podemos esquecer de fazer esse passo, senão o app corre o risco de ser encerrado pelo iOS.
+        //Encerrar a tarefa
+        //Não podemos esquecer de fazer esse passo, pq senão o app corre o risco de ser encerrado pelo iOS
         [[UIApplication sharedApplication] endBackgroundTask:taskID];
+        
     }];
     
-    // Tarefa em segundo plano
-    
-    // Disparar uma nova fila em outra thread
+    //COMEÇO - TAREFA EM SEGUNDO PLANO
+    //Disparar uma nova fila em outra thread
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-        // Agora o processo acontece fora da main thread
         
-        // Atividade demorada
-        for (int i=0; i<100000; i++) {
+        //Agora o processo acontece fora da main thread
+        
+        //Atividade demorada
+        for (int i = 0; i < 2000; i++) {
             NSLog(@"Contando %d", i);
         }
         
-        // Se precisar atualizar um componente visual, voltamos para a mainthread
+        //Se precisar alterar um componente visual, voltamos para a mainthread
         dispatch_async(dispatch_get_main_queue(), ^{
-            [[[UIAlertView alloc] initWithTitle:nil message:@"Acabou contagem" delegate:nil cancelButtonTitle:@"Fechar" otherButtonTitles: nil] show];
+            //[self.tabela reloadData];
+            
+            [[[UIAlertView alloc] initWithTitle:nil message:@"Acabou contagem" delegate:nil cancelButtonTitle:@"Fechar" otherButtonTitles:nil] show];
+            
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"TAREFAACABOU" object:nil];
         });
         
-        // Encerrar a tarefa
+        
+        //Encerrar a tarefa
         [[UIApplication sharedApplication] endBackgroundTask:taskID];
-        
-        // Fim da tarefa
-        
+    
+        //FIM - TAREFA EM SEGUNDO PLANO
     });
     
     
     
+    
+    
+    
+    
+    
 }
+
+
+
+
+
+
+
+
+
 
 @end
