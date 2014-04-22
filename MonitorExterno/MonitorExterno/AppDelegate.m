@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  MonitorExterno
 //
-//  Created by Daniel Arndt Alves on 3/29/14.
-//  Copyright (c) 2014 ProgDan Software. All rights reserved.
+//  Created by Eduardo Lima on 3/29/14.
+//  Copyright (c) 2014 personal. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -14,28 +14,60 @@
 {
     // Override point for customization after application launch.
     
-    // Temos um segundo monitor?
+    //Temos um segundo monitor?
     if ([[UIScreen screens] count] > 1) {
-        // 0 - Tela Principal
-        // 1 - Tela Externa
         
-        // Salvando a referência da tela externa
+        //0 - tela principal
+        //1 - tela externa
+        
+        //Salvando a referencia da tela externa
         self.screenExterna = [[UIScreen screens] objectAtIndex:1];
         
         UIAlertView *alerta = [[UIAlertView alloc] initWithTitle:@"Monitor externo" message:@"Monitor externo reconhecido!" delegate:self cancelButtonTitle:nil otherButtonTitles:nil];
         
-        // Permitir que o usuário escolha a resolução
+        //Permitir que o usuário escolha a resolução
         for (UIScreenMode *mode in self.screenExterna.availableModes) {
-            // Adicionar um novo botão
+            
+            //Adicionar um novo botão
             NSString *titulo = [NSString stringWithFormat:@"%.0f x %.0f", mode.size.width, mode.size.height];
+            
             [alerta addButtonWithTitle:titulo];
+            
         }
         [alerta show];
     }
-    
     return YES;
 }
-							
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    
+    //Setando a escolha do usuário
+    self.screenExterna.currentMode = self.screenExterna.availableModes[buttonIndex];
+    
+    self.windowExterna = [[UIWindow alloc] initWithFrame:self.screenExterna.bounds];
+    
+    //Associando a nova janela no segundo monitor
+    self.windowExterna.screen = self.screenExterna;
+    
+    
+    //Adicionar uma foto
+    self.foto = [[UIImageView alloc] initWithFrame:self.windowExterna.bounds];
+    self.foto.backgroundColor = [UIColor blueColor];
+    
+    [self.windowExterna addSubview:self.foto];
+    
+    //Exibir a nova window
+    [self.windowExterna makeKeyAndVisible];
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -61,25 +93,6 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
-
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    self.screenExterna.currentMode = self.screenExterna.availableModes[buttonIndex];
-    
-    self.windowExterna = [[UIWindow alloc] initWithFrame:self.screenExterna.bounds];
-    
-    // Associando a nova janela no segundo monitor
-    self.windowExterna.screen = self.screenExterna;
-    
-    // Adicionar uma foto
-    self.foto = [[UIImageView alloc] initWithFrame:self.windowExterna.bounds];
-    self.foto.backgroundColor = [UIColor blueColor];
-    
-    [self.windowExterna addSubview:self.foto];
-    
-    // Exibir a nova window
-    [self.windowExterna makeKeyAndVisible];
 }
 
 @end

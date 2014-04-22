@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>16DEFCC6-BA7E-455A-81F0-E469576E4869</string>
+	<string>2FF614BF-69DE-4C7F-8BDF-FB4E9B96EF84</string>
 	<key>IDESourceControlProjectName</key>
 	<string>MonitorExterno</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>7A2D49AE-28EE-4960-9955-39FADE22FC0D</key>
+		<key>C67EC30F-1C99-4C62-BD2C-9FA3D0D2BD72</key>
 		<string>ssh://github.com/ProgDan/iOS_Research.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>MonitorExterno/MonitorExterno.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>7A2D49AE-28EE-4960-9955-39FADE22FC0D</key>
+		<key>C67EC30F-1C99-4C62-BD2C-9FA3D0D2BD72</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>7A2D49AE-28EE-4960-9955-39FADE22FC0D</string>
+	<string>C67EC30F-1C99-4C62-BD2C-9FA3D0D2BD72</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>7A2D49AE-28EE-4960-9955-39FADE22FC0D</string>
+			<string>C67EC30F-1C99-4C62-BD2C-9FA3D0D2BD72</string>
 			<key>IDESourceControlWCCName</key>
 			<string>iOS_Research</string>
 		</dict>
